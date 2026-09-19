@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log In — Promptverse AI</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="auth-page">
+
+  <!-- Floating background cards - decorative only -->
+  <div class="floating-card card-top">
+    <span class="card-label">PROMPT</span>
+    <div class="card-line-group">
+      <div class="pulse-line"></div>
+      <div class="pulse-line"></div>
+      <div class="pulse-line"></div>
+    </div>
+    <div class="card-row">
+      <span>model</span><span class="card-value">promptverse-v2</span>
+    </div>
+    <div class="card-row">
+      <span>status</span><span class="card-value">generating</span>
+    </div>
+    <div class="build-box">
+      <span>+</span>
+      <small>BUILD</small>
+    </div>
+  </div>
+
+  <div class="floating-card card-left">
+    <span class="card-label">SESSION</span>
+    <div class="card-line-group">
+      <div class="pulse-line"></div>
+      <div class="pulse-line"></div>
+    </div>
+    <div class="card-row">
+      <span>tokens</span><span class="card-value">1,204</span>
+    </div>
+    <div class="card-row">
+      <span>mode</span><span class="card-value">creative</span>
+    </div>
+    <div class="build-box">
+      <span>+</span>
+      <small>BUILD</small>
+    </div>
+  </div>
+
+  <div class="floating-card card-right">
+    <span class="card-label">OUTPUT</span>
+    <div class="card-line-group">
+      <div class="pulse-line"></div>
+      <div class="pulse-line"></div>
+      <div class="pulse-line"></div>
+    </div>
+    <div class="card-row">
+      <span>format</span><span class="card-value">image + text</span>
+    </div>
+    <div class="card-row">
+      <span>engine</span><span class="card-value">promptverse</span>
+    </div>
+    <div class="build-box">
+      <span>+</span>
+      <small>BUILD</small>
+    </div>
+  </div>
+
+  <!-- Actual login form -->
+  <div class="auth-box">
+
+    <div class="auth-header">
+      <span class="heading-icon">✦</span>
+      <h1>Promptverse AI</h1>
+    </div>
+
+    <h2>Welcome back</h2>
+    <p class="auth-subtext">Log in to continue creating with Promptverse.</p>
+
+    <form class="auth-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••" required />
+
+      <a href="#" class="forgot-link">Forgot password?</a>
+
+      <button type="submit" class="auth-submit-btn">Log In</button>
+    </form>
+
+    <p class="auth-switch">
+      Don't have an account? <a href="signup.html">Create one</a>
+    </p>
+
+    <button class="sidebar-link theme-toggle-auth" id="lightModeBtn">🌙</button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Prompt AI VAST</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="index.html"><span class="mark"></span>Prompt AI VAST</a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="pricing.html">Pricing</a></li>
+      <li><a class="cta" href="#pro-cta">Get started</a></li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">Dark mode</button>
+  </nav>
+</header>
+
+<section>
+  <div class="wrap pricing-hero">
+    <div class="eyebrow">PRICING</div>
+    <h1>One brief. Every plan builds from there.</h1>
+    <p>Start free and upgrade when you're running more campaigns than the trial allows. All paid plans include every ad channel — plans differ in usage limits, seats, and support.</p>
+    <div>
+      <span class="toggle">
+        <button class="on" id="btn-monthly" onclick="setBilling('monthly')">Monthly</button>
+        <button id="btn-annual" onclick="setBilling('annual')">Annual</button>
+      </span>
+      <span class="save">Annual saves ~20%</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="tiers">
+      <div class="tier">
+        <div class="tier-name">FREE TRIAL</div>
+        <div class="price">$0</div>
+        <div class="tier-desc">14 days, full features. For testing VAST before you commit.</div>
+        <ul class="feat">
+          <li>Up to 3 active campaigns</li>
+          <li>All ad channels unlocked</li>
+          <li>1 seat</li>
+          <li class="off">No priority support</li>
+          <li class="off">Trial ends after 14 days</li>
+        </ul>
+        <button class="btn ghost" style="width:100%">Start free trial</button>
+      </div>
+
+      <div class="tier featured">
+        <div class="badge">MOST CHOSEN</div>
+        <div class="tier-name">INDIVIDUAL / PRO</div>
+        <div class="price" id="pro-price">$30<span>/mo</span></div>
+        <div class="tier-desc">For freelancers and solo operators running ongoing campaigns.</div>
+        <ul class="feat">
+          <li>Unlimited active campaigns</li>
+          <li>All ad channels</li>
+          <li>1 seat</li>
+          <li>Email support</li>
+          <li>Campaign performance reports</li>
+        </ul>
+        <button class="btn accent" id="pro-cta" style="width:100%">Start with Pro</button>
+      </div>
+
+      <div class="tier">
+        <div class="tier-name">BUSINESS / TEAM</div>
+        <div class="price" id="biz-price">$45<span>/seat/mo</span></div>
+        <div class="tier-desc">For small-to-mid teams approving and running campaigns together.</div>
+        <ul class="feat">
+          <li>Everything in Pro</li>
+          <li>Shared assets &amp; approvals</li>
+          <li>Up to 10 seats</li>
+          <li>Priority support</li>
+          <li>Spend controls per seat</li>
+        </ul>
+        <button class="btn ghost" style="width:100%">Talk to sales</button>
+      </div>
+    </div>
+
+    <div class="enterprise-bar">
+      <div>
+        <h3>Enterprise</h3>
+        <p>Custom seats, SLAs, security review, and dedicated support for larger organizations.</p>
+      </div>
+      <button class="btn primary">Contact us</button>
+    </div>
+  </div>
+
+  <div class="wrap faq">
+    <h2>Questions</h2>
+    <details class="faq-item" open>
+      <summary>What happens when the free trial ends?</summary>
+      <p>Your campaigns pause automatically. Upgrade any time to reactivate them with no setup needed.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I switch plans later?</summary>
+      <p>Yes — upgrade, downgrade, or cancel from your account at any time. Changes apply on your next billing date.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there a limit on ad spend?</summary>
+      <p>No — your plan covers VAST's usage, not your ad budget. You control ad spend directly with each platform.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Prompt AI VAST</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
