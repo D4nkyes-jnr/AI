@@ -6,7 +6,7 @@
 }
 body{
     background-color: var(--bg);
-    color: white;
+    color: var(--text-primary);
     min-height: 100vh;
   
 }
@@ -15,11 +15,11 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: .8rem 4rem;
-    background-color: #0b0e14;
+    background-color: var(--surface);
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #94a3b8;
+    border-bottom: 1px solid var(--border);
     width: 100%;
     overflow: visible;
 
@@ -33,8 +33,8 @@ body{
     letter-spacing: -0.01rem;
 }
 .logo-circle{
-    background-color: white;
-    color: #0b0e14;
+    background-color: var(--text-primary);
+    color: var(--bg);
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -52,7 +52,7 @@ body{
     align-items: center;
 }
 .nav-links a{
-    color: #94a3b8;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 500;
@@ -71,7 +71,7 @@ body{
     transition: width 1.25s ease;
 }
 .nav-links a:hover{
-    color:white;
+    color: var(--text-primary);
 }
 .nav-links a:hover::after{
     width: 100%;
@@ -83,8 +83,8 @@ body{
     
 }
 .btn-get-started{
-background-color: white;
-color: #0b0e14; 
+background-color: var(--text-primary);
+color: var(--bg); 
 border: none;
 padding: 0.55rem 1.2rem;
 border-radius: 20px;
@@ -137,7 +137,7 @@ transition: opacity 0.2s;
 
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-primary);
     margin-bottom: 1rem;
     letter-spacing: -0.08em;
  text-align: center;
@@ -146,14 +146,14 @@ transition: opacity 0.2s;
     font-size: 3.75rem;
     font-weight: 400;
    line-height: 1.1;
-   color: white;
+   color: var(--text-primary);
    letter-spacing: -0.03em;
    margin-bottom: 1.4rem;
 }
 .hero-subtitle{
     font-size: 0.82rem;
     line-height: 1.65;
-    color: #94a3b8;
+    color: var(--text-secondary);
     max-width: 630px;
     margin: 0 auto 2.2rem;
     font-weight: 100;
@@ -165,9 +165,9 @@ transition: opacity 0.2s;
     gap: .8rem;
 }
 .btn-primary{
-    background: black;
-    color: white;
-    border:1px solid white ;
+    background: var(--text-primary);
+    color: var(--bg);
+    border:1px solid var(--text-primary);
     padding: .65rem 1.4rem;
     border-radius: 25px;
     font-size: .8rem;
@@ -183,8 +183,8 @@ transition: opacity 0.2s;
      box-shadow:0 0 30px rgba(59, 130, 246, 0.4);
 }
 .btn-secondary{
-    background-color: rgba(255, 255,255, 0.88);
-    color: #0b0e14;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
     padding: .65rem 1.4rem;
     border-radius: 25px;
     font-size: .8rem;
@@ -197,7 +197,7 @@ transition: opacity 0.2s;
 }
 .star{
     position: absolute;
-    color: white;
+    color: var(--text-primary);
     pointer-events: none;
     z-index: 1;
 }
@@ -209,7 +209,7 @@ transition: opacity 0.2s;
 .star-6{top: 20%; right: 10%; font-size: 1.3rem; opacity: 0.95;}
 .dot{
     position: absolute;
-    background-color: white;
+    background-color: var(--text-primary);
     border-radius: 50%;
     pointer-events: none;
     z-index: 1;
@@ -230,14 +230,14 @@ transition: opacity 0.2s;
 .section-title{
     font-size: 2.2rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-primary);
     margin-bottom: 1rem;
     letter-spacing: -0.02rem;
 }
 .section-subtitle{
     font-size: .8rem;
     line-height: 1.6;
-    color: #94a3b8;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 .cards-grid{
@@ -246,8 +246,8 @@ transition: opacity 0.2s;
     gap: 1.2rem;
 }
 .card{
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid  rgba(255, 255, 255, 0.08);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 1px;
     padding: 1.4rem;
     text-align: left;
@@ -263,7 +263,7 @@ transition: opacity 0.2s;
 .card-text{
     font-size: .85rem;
     font-weight: 400;
-    color: white;
+    color: var(--text-primary);
     line-height: 1.4;
     margin-bottom:.8rem ;
 }
@@ -295,7 +295,7 @@ transition: opacity 0.2s;
 .hamburger-btn .bar{
     width: 100%;
     height: 2px;
-    background-color:white;
+    background-color: var(--text-primary);
     border-radius: 2px;
     transition: all 0.ss ease;
     pointer-events: none;
@@ -311,7 +311,7 @@ transition: opacity 0.2s;
 }
  .nav-menu a{
         display: block;
-        color: white;
+        color: var(--text-primary);
         text-decoration: none;
     }
     .nav-menu.active{
@@ -382,7 +382,7 @@ gap: 1.2rem;
         gap: 1.5rem;
         display: none;
         z-index: 9999;
-        background-color: #0b0e14;
+        background-color: var(--surface);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
     .nav-menu.active{
@@ -638,9 +638,6 @@ gap: 1.2rem;
   line-height: 1.7;
 }
 
-/* CSS Grid with named areas lets us place the big image and 4
-   small images exactly where we want, instead of relying on
-   items just flowing left-to-right in order */
 .gallery-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr;
@@ -653,17 +650,16 @@ gap: 1.2rem;
 
 .gallery-item {
   border-radius: 12px;
-  overflow: hidden; /* clips the image to the rounded corners */
+  overflow: hidden;
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills the box without distorting the image */
+  object-fit: cover;
   display: block;
 }
 
-/* The large image spans both rows on the left */
 .gallery-item.large {
   grid-row: 1 / 3;
 }
@@ -716,7 +712,7 @@ gap: 1.2rem;
 
 .pill-group {
   display: flex;
-  flex-wrap: wrap; /* lets pills drop to a new line instead of overflowing */
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
 }
@@ -737,7 +733,6 @@ gap: 1.2rem;
   border-color: var(--accent);
 }
 
-/* the filled "Generate now" pill stands out from the outlined ones */
 .pill-cta {
   background: var(--text-primary);
   color: var(--bg);
@@ -750,7 +745,7 @@ gap: 1.2rem;
 }
 
 .audio-media {
-  position: relative; /* lets the play button be positioned on top of the image */
+  position: relative;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -766,7 +761,7 @@ gap: 1.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* centers the button regardless of its size */
+  transform: translate(-50%, -50%);
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -816,11 +811,10 @@ gap: 1.2rem;
   margin-top: 24px;
 }
 
-/* 3 columns, 2 rows - matches the screenshot's layout exactly */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 32px; /* row-gap 40px, column-gap 32px */
+  gap: 40px 32px;
 }
 
 .feature-item h3 {
@@ -838,13 +832,13 @@ gap: 1.2rem;
    text-align: left;
 }
 .final-cta {
-  position: relative; /* lets the sparkles be positioned freely around the box */
+  position: relative;
   background: var(--surface);
   border-radius: 16px;
   padding: 80px 40px;
   margin: 60px 48px;
   text-align: center;
-  overflow: hidden; /* keeps sparkles from spilling outside the rounded box */
+  overflow: hidden;
 }
 
 .final-cta-content h2 {
@@ -870,8 +864,6 @@ gap: 1.2rem;
   opacity: 0.85;
 }
 
-/* Decorative sparkles - positioned absolutely so they float
-   around the text without affecting the layout/flow */
 .sparkle {
   position: absolute;
   color: var(--text-muted);
@@ -983,7 +975,6 @@ gap: 1.2rem;
   border-color: var(--accent);
 }
 
-/* ---------- Footer bottom bar ---------- */
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding: 20px 0;
@@ -1023,11 +1014,6 @@ gap: 1.2rem;
   text-decoration: none;
   font-size: 12px;
 }
-/* ============================================
-   RESPONSIVENESS — app-layout section
-   ============================================ */
-
-/* Tablet: sidebar gets narrower, content padding shrinks */
 @media (max-width: 1024px) {
   .sidebar {
     width: 220px;
@@ -1043,7 +1029,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet / large phone: sidebar collapses to a horizontal top bar */
 @media (max-width: 768px) {
   .app-layout {
     flex-direction: column;
@@ -1066,7 +1051,7 @@ gap: 1.2rem;
   }
 
   .chat-history {
-    display: none; /* hide chat history list on small screens to save space */
+    display: none;
   }
 
   .sidebar-bottom {
@@ -1077,7 +1062,7 @@ gap: 1.2rem;
   }
 
   .sidebar-link span {
-    display: none; /* keep icons, hide text labels to save space */
+    display: none;
      flex: 0 1 auto;
     width: auto;
   }
@@ -1099,7 +1084,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: tighten everything further */
 @media (max-width: 480px) {
   .page-header {
     flex-direction: column;
@@ -1123,11 +1107,6 @@ gap: 1.2rem;
     font-size: 12px;
   }
 }
-/* ============================================
-   RESPONSIVE: Trending Prompts grid + header
-   ============================================ */
-
-/* Tablet: drop from 3 columns to 2 */
 @media (max-width: 1024px) {
   .main-content {
     padding: 24px 32px;
@@ -1143,7 +1122,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet / large phone: single column, header stacks */
 @media (max-width: 768px) {
   .main-content {
     padding: 20px 20px;
@@ -1167,7 +1145,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: tighten text and pagination */
 @media (max-width: 480px) {
   .page-header h1 {
     font-size: 18px;
@@ -1193,11 +1170,6 @@ gap: 1.2rem;
     font-size: 12px;
   }
 }
-/* ============================================
-   RESPONSIVE: Image gallery section
-   ============================================ */
-
-/* Tablet: shrink padding and grid height a bit */
 @media (max-width: 1024px) {
   .gallery-section {
     padding: 48px 32px;
@@ -1212,8 +1184,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet/phone: stack everything into one column,
-   the "large" image just becomes a regular full-width image */
 @media (max-width: 768px) {
   .gallery-section {
     padding: 40px 20px;
@@ -1228,24 +1198,21 @@ gap: 1.2rem;
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr; /* one column instead of 3 */
-    grid-template-rows: none;   /* let rows size themselves automatically */
-    height: auto;               /* remove the fixed height from desktop */
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    height: auto;
   }
 
   .gallery-item {
-    height: 220px; /* give each stacked image a consistent height */
+    height: 220px;
   }
 
-  /* undo the "span both rows" trick from desktop -
-     on a single column, there's no second row to span into */
   .gallery-item.large {
     grid-row: auto;
-    height: 260px; /* slightly taller since it's the "hero" image */
+    height: 260px;
   }
 }
 
-/* Phone: shrink image height further */
 @media (max-width: 480px) {
   .gallery-item {
     height: 180px;
@@ -1259,10 +1226,6 @@ gap: 1.2rem;
     font-size: 19px;
   }
 }
-/* ============================================
-   RESPONSIVE: Audio & Music section
-   ============================================ */
-
 @media (max-width: 1024px) {
   .audio-section {
     padding: 48px 32px;
@@ -1277,7 +1240,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet/phone: stack text above image instead of side-by-side */
 @media (max-width: 768px) {
   .audio-section {
     padding: 40px 20px;
@@ -1288,11 +1250,11 @@ gap: 1.2rem;
   }
 
   .audio-showcase {
-    grid-template-columns: 1fr; /* single column - stacks vertically */
+    grid-template-columns: 1fr;
   }
 
   .audio-media {
-    order: -1; /* shows the image ABOVE the text on mobile, like most landing pages do */
+    order: -1;
     height: 280px;
   }
 
@@ -1305,7 +1267,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: shrink pills and text further */
 @media (max-width: 480px) {
   .pill {
     padding: 8px 16px;
@@ -1322,10 +1283,6 @@ gap: 1.2rem;
     height: 220px;
   }
 }
-/* ============================================
-   RESPONSIVE: More features section
-   ============================================ */
-
 @media (max-width: 1024px) {
   .features-section {
     padding: 48px 32px;
@@ -1340,7 +1297,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet/phone: drop to 2 columns */
 @media (max-width: 768px) {
   .features-section {
     padding: 40px 20px;
@@ -1356,7 +1312,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: single column, everything stacks */
 @media (max-width: 480px) {
   .features-grid {
     grid-template-columns: 1fr;
@@ -1379,10 +1334,6 @@ gap: 1.2rem;
     font-size: 12px;
   }
 }
-/* ============================================
-   RESPONSIVE: Final CTA section
-   ============================================ */
-
 @media (max-width: 1024px) {
   .final-cta {
     padding: 64px 32px;
@@ -1394,8 +1345,6 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet/phone: hide the sparkles (they'd overlap the
-   text once things get tight) and shrink text/button */
 @media (max-width: 768px) {
   .final-cta {
     padding: 48px 24px;
@@ -1419,7 +1368,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: tighten further */
 @media (max-width: 480px) {
   .final-cta {
     padding: 40px 16px;
@@ -1431,10 +1379,6 @@ gap: 1.2rem;
     font-size: 16px;
   }
 }
-/* ============================================
-   RESPONSIVE: Footer
-   ============================================ */
-
 @media (max-width: 1024px) {
   .site-footer {
     padding: 48px 32px 0;
@@ -1445,14 +1389,13 @@ gap: 1.2rem;
   }
 }
 
-/* Small tablet/phone: stack all 3 footer columns vertically */
 @media (max-width: 768px) {
   .site-footer {
     padding: 40px 20px 0;
   }
 
   .footer-grid {
-    grid-template-columns: 1fr; /* one column instead of 3 */
+    grid-template-columns: 1fr;
     gap: 32px;
     padding-bottom: 32px;
   }
@@ -1468,7 +1411,6 @@ gap: 1.2rem;
   }
 }
 
-/* Phone: shrink text and icons further */
 @media (max-width: 480px) {
   .footer-col h4,
   .footer-col ul li a,
@@ -1506,9 +1448,6 @@ gap: 1.2rem;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
-/* ============================================
-   LOGIN / AUTH PAGE
-   ============================================ */
 .auth-page {
   position: relative;
   min-height: 100vh;
@@ -1516,13 +1455,13 @@ gap: 1.2rem;
   align-items: center;
   justify-content: center;
   background: var(--bg);
-  overflow: hidden; /* keeps floating cards from causing scrollbars */
+  overflow: hidden;
   padding: 24px;
 }
 
 .auth-box {
   position: relative;
-  z-index: 10; /* sits above the floating background cards */
+  z-index: 10;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -1630,19 +1569,16 @@ gap: 1.2rem;
   cursor: pointer;
 }
 
-/* ============================================
-   FLOATING DECORATIVE CARDS
-   ============================================ */
 .floating-card {
   position: absolute;
-  z-index: 1; /* sits behind .auth-box */
+  z-index: 1;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 20px;
   width: 220px;
-  opacity: 0.35; /* subtle, doesn't compete with the form */
-  pointer-events: none; /* purely decorative - clicks pass through to what's behind */
+  opacity: 0.35;
+  pointer-events: none;
 }
 
 .card-top {
@@ -1683,7 +1619,6 @@ gap: 1.2rem;
   animation: pulseLine 3s ease-in-out infinite;
 }
 
-/* Staggered timing so the three lines in each card don't move in sync */
 .card-line-group .pulse-line:nth-child(1) { animation-delay: 0s; }
 .card-line-group .pulse-line:nth-child(2) { animation-delay: 0.4s; }
 .card-line-group .pulse-line:nth-child(3) { animation-delay: 0.8s; }
@@ -1735,14 +1670,9 @@ gap: 1.2rem;
   50% { transform: translateY(-10px); }
 }
 
-/* Slightly different timing per card so all 3 don't bounce in perfect unison */
 .card-left .build-box { animation-duration: 3.2s; }
 .card-right .build-box { animation-duration: 2.4s; }
 
-/* ============================================
-   RESPONSIVE: hide floating cards on small screens
-   (not enough room, and they'd overlap the form)
-   ============================================ */
 @media (max-width: 900px) {
   .floating-card {
     display: none;
@@ -1779,24 +1709,10 @@ gap: 1.2rem;
   --paper-dim:#1B1C2A;
 }
 
-*{box-sizing:border-box;}
-html,body{margin:0;padding:0;}
-body{
-  background:var(--paper);
-  color:var(--ink);
-  font-family:'Source Serif 4', serif;
-  font-size:17px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,.mono,nav,.btn,.tier-name,.price{
-  font-family:'Space Grotesk', sans-serif;
-}
-a{color:inherit;text-decoration:none;}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
 @media (max-width:640px){.wrap{padding:0 20px;}}
 
-/* NAV */
+/* NAV — pricing/home page */
 header{
   border-bottom:1px solid var(--line);
   position:sticky;top:0;
@@ -1807,12 +1723,12 @@ nav.wrap{
   display:flex;align-items:center;justify-content:space-between;
   height:76px;
 }
-.logo{
+nav.wrap .logo{
   font-weight:700;font-size:1.05rem;letter-spacing:0.01em;
   display:flex;align-items:center;gap:10px;cursor:pointer;
   background:none;border:none;color:inherit;font-family:inherit;padding:0;
 }
-.logo .mark{
+nav.wrap .logo .mark{
   width:10px;height:10px;background:var(--lime);
   transform:rotate(45deg);flex:none;
 }
@@ -1832,18 +1748,47 @@ nav.wrap{
 }
 .navlinks .cta:hover{background:var(--plum);}
 
-@media (max-width:720px){
-  .navlinks{gap:20px;}
-  .navlinks span{display:none;}
+.theme-toggle{
+  background:none;border:1px solid var(--line);color:var(--ink);
+  font-family:'Space Grotesk',sans-serif;font-size:0.85rem;
+  padding:8px 14px;cursor:pointer;margin-left:20px;flex:none;
+}
+.theme-toggle:hover{background:var(--paper-dim);}
+
+.hamburger{
+  display:none;
+  background:none;border:none;cursor:pointer;
+  flex-direction:column;gap:5px;padding:6px;
+}
+.hamburger span{
+  width:22px;height:2px;background:var(--ink);display:block;
 }
 
-/* HOME */
-.hero{
-  padding:96px 0 72px;
-  display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:end;
-  border-bottom:1px solid var(--line);
+@media (max-width:720px){
+  .hamburger{display:flex;}
+  .navlinks{
+    display:none;
+    position:absolute;
+    top:76px;left:0;right:0;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+    padding:8px 0;
+  }
+  .navlinks.open{display:flex;}
+  .navlinks li{width:100%;}
+  .navlinks a, .navlinks button{
+    width:100%;
+    padding:14px 32px;
+    display:block;
+  }
+  .navlinks a.active::after{display:none;}
+  .navlinks .cta{background:none;color:var(--ink);}
+  .theme-toggle{margin:8px 32px;}
 }
-@media (max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding:56px 0 48px;}}
+
 .eyebrow{
   font-family:'Space Grotesk',sans-serif;font-size:0.82rem;color:var(--grey);
   margin-bottom:22px;
@@ -1901,7 +1846,6 @@ h1.headline{
 .homecta{padding:80px 0;text-align:left;}
 .homecta h2{font-size:2rem;font-weight:600;max-width:18ch;margin:0 0 24px;}
 
-/* PRICING */
 .pricing-hero{padding:72px 0 48px;border-bottom:1px solid var(--line);}
 .pricing-hero .eyebrow{margin-bottom:18px;}
 .pricing-hero h1{font-size:clamp(2.1rem,4vw,2.8rem);font-weight:600;margin:0 0 16px;max-width:16ch;}
@@ -1966,36 +1910,3 @@ h1.headline{
 .faq-item p{color:var(--grey);margin:12px 0 0;font-size:0.95rem;max-width:60ch;}
 
 footer{border-top:1px solid var(--line);padding:28px 0;font-size:0.85rem;color:var(--grey);}
-.hamburger{
-  display:none;
-  background:none;border:none;cursor:pointer;
-  flex-direction:column;gap:5px;padding:6px;
-}
-.hamburger span{
-  width:22px;height:2px;background:var(--ink);display:block;
-}
-
-@media (max-width:720px){
-  .hamburger{display:flex;}
-  .navlinks{
-    display:none;
-    position:absolute;
-    top:76px;left:0;right:0;
-    background:var(--paper);
-    border-bottom:1px solid var(--line);
-    flex-direction:column;
-    align-items:flex-start;
-    gap:0;
-    padding:8px 0;
-  }
-  .navlinks.open{display:flex;}
-  .navlinks li{width:100%;}
-  .navlinks a, .navlinks button{
-    width:100%;
-    padding:14px 32px;
-    display:block;
-  }
-  .navlinks a.active::after{display:none;}
-  .navlinks .cta{background:none;color:var(--ink);}
-  .theme-toggle{margin:8px 32px;}
-}
